@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.19.0
 
-FROM public.ecr.aws/amazonlinux/amazonlinux:minimal as linux
+FROM public.ecr.aws/amazonlinux/amazonlinux:minimal AS linux
 # we want latest here
 # hadolint ignore=DL3041
 RUN dnf install -y \
