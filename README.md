@@ -35,4 +35,10 @@ RUN uv pip install -r requirements.txt && rm -rf /git-core
 
 ### Caveat Emptor
 
-This image is built off of public.ecr.aws/amazonlinux/amazonlinux:minimal, which is the "latest" version (currently AL2023). This is because that's what their lambda python runtime images are based off.
+ - This image is built off of public.ecr.aws/amazonlinux/amazonlinux:minimal, which is the "latest" version (currently AL2023). This is because that's what their lambda python runtime images are based off.
+
+ - Images are built every Monday morning, and will include any system package update. This only goes to the `latest` tag.
+
+ - Patch versions are cut about every month from latest.
+
+ - Minor versions are bumped when there's a new git version released on kernel.org.
